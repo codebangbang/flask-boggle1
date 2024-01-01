@@ -33,9 +33,9 @@ class BoggleGame {
         }
         const resp = await axios.get("/check-word", { params: { word: word }});
         if (resp.data.result === "not-word") {
-            this.showMessage(`${word} is not a valid English word, dummy`, "err");
+            this.showMessage(`${word}? Come on... that's not even a word!`, "err");
         } else if (resp.data.result === "not-on-board") {
-            this.showMessage(`${word} is not a valid word on this board`, "err");
+            this.showMessage(`${word} is not a word on this board`, "err");
         } else {
             this.showWord(word);
             this.score += word.length;
