@@ -1,0 +1,13 @@
+.board td {
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+    width: 2em;
+    height: 2em;
+}
+
+.board {
+    background-color: rgb(238, 161, 238);
+    border: solid 1px;
+}
+
